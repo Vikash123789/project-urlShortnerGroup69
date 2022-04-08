@@ -4,10 +4,10 @@ const UrlController = require('../controllers/urlController')
 
 
 
-// API for url shortening 
+// Post API for url shortening.....................
 router.post('/url/shorten', UrlController.urlShortner )
 
-// API for redirecting to original url
+// GET API for redirecting to original url......
 router.get('/:urlCode', UrlController.getUrl)
 
 
