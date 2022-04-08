@@ -1,30 +1,29 @@
 {
-  "name": "project-url-shortener",
+  "name": "radium",
   "version": "1.0.0",
-  "description": "URL shortening is used to create shorter aliases for long URLs. We call these shortened aliases “short links.” Users are redirected to the original URL when they hit these short links. Short links save a lot of space when displayed, printed, messaged, or tweeted. Additionally, users are less likely to mistype shorter URLs.",
+  "description": "repository for backend cohort - Radium",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Surajxxx/Project-URL-SHORTENER.git"
+    "url": "git+https://github.com/sabihak89/radium.git"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Surajxxx/Project-URL-SHORTENER/issues"
+    "url": "https://github.com/sabihak89/radium/issues"
   },
-  "homepage": "https://github.com/Surajxxx/Project-URL-SHORTENER#readme",
+  "homepage": "https://github.com/sabihak89/radium#readme",
   "dependencies": {
-    "body-parser": "^1.20.0",
-    "express": "^4.17.3",
-    "mongoose": "^6.2.9",
-    "nanoid": "^3.3.2",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "moment": "^2.29.1",
+    "mongoose": "^6.0.12",
     "nodemon": "^2.0.15",
-    "redis": "^3.1.2",
-    "shortid": "^2.2.16",
-    "util": "^0.12.4"
+    "redis": "^3.1.2"
   }
 }
