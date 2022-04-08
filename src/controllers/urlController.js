@@ -85,7 +85,7 @@ const urlShortner = async function (req, res) {
         const addingUrlDataInCacheByUrlCode = await SET_ASYNC(urlDataFromDB.urlCode,urlDataFromDB.longUrl
         );
 
-        return res.status(200).send({status: true,msg: "URL shorten successfully",data: url,
+        return res.status(201).send({status: true,msg: "URL shorten successfully",data: url,
         });
       } else {
         const urlCode = ShortId.generate().toLowerCase();
