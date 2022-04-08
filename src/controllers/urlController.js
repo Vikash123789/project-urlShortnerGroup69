@@ -23,7 +23,7 @@ const isValidUrl = function (value) {
 
 //Connection Create For Redis...................
 
-const redisClient = redis.createClient(
+const redisClient = redis.createClient(  
   10430,
   "redis-10430.c212.ap-south-1-1.ec2.cloud.redislabs.com",
   { no_ready_check: true }
@@ -72,7 +72,7 @@ const urlShortner = async function (req, res) {
     if (urlDataFromCache) {
       const data = {longUrl: longUrl,urlCode: urlDataFromCache,shortUrl: base + urlDataFromCache,
       };
-      res.status(200).send({status: true,msg: "Url shorten successfully",data: data,
+      res.status(201).send({status: true,msg: "Url shorten successfully",data: data,
       });
     } else {
       const urlDataFromDB = await UrlModel.findOne({ longUrl }).select({shortUrl: 1,longUrl: 1,urlCode: 1,      _id: 0,
