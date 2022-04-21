@@ -1,4 +1,4 @@
-# Project-URL-SHORTENER# Thoriumc
+# Project-URL-SHORTENER# Thorium
 
 ## Scalable URL Shortner Project Requirement
 
